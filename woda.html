@@ -1,0 +1,100 @@
+<head>
+    <meta charset="utf-8" />
+    <title>Hurtownia wody źródlanej</title>
+	<link rel="stylesheet" type="text/css" href="woda.css">
+    <style> 
+        select {
+          border: none;
+          background-color: #f1f1f1;
+        }
+        </style>
+</head>
+<body>
+    <form>
+<div id="mother">
+
+ <div id="baner"> 
+Źródlana woda uśmiechu doda!!!  
+ </div>
+ <div id="left">
+    <div id="formularz">  
+    <h2>Oferta handlowa:</h2>  
+    <table>
+        <tr>
+            <td>Woda Żywiec</td>
+            <td>1,50zł/1,5l</td>
+        </tr>
+        <tr>
+            <td>Woda Muszynianka</td>
+            <td>1,70zł/1,5l</td>
+        </tr>
+        <tr>
+            <td>Woda Cisowianka</td>
+            <td>1,55zł/1,5l</td>
+        </tr>
+    </table>
+    <h2>Formularz zakupów:</h2>
+    <form name='formularz'>
+        
+        <label for='typ'>Wybierz rodzaj wody: </label>
+        <select id='typ' name='typ'>
+        <option value='A'>Bonaqua 2 zl   </option>
+        <option value='B'>Kropla 3 zl    </option>
+        <option value='C'>Cisowianka 4 zl</option>
+        <option value='D'>Kranowa 5 zl   </option>
+        </select>
+        
+        
+        <label for='ilosc'>Ile butelek? </label>
+        <input type='number' id='ilosc' name='ilosc'>
+        <BR>
+        <input type='button' value='Oblicz' onclick="oblicz()">
+        </form>
+        
+        
+        Wynik:
+        <p id='wynik'></p>
+        
+        <script>
+        function oblicz(){
+        var wynik=0;
+        var typ=document.forms['formularz']['typ'].value;
+        var ilosc=document.forms['formularz']['ilosc'].value;
+        if(typ=='A')
+        {
+        wynik+=2*ilosc;
+        }
+        else if(typ=='B')
+        {
+        wynik+=3*ilosc;
+        }
+        else if(typ=='C')
+        {
+        wynik+=4*ilosc;
+        }
+        else if(typ=='D')
+        {
+        wynik+=5*ilosc;
+        }
+        
+        document.getElementById('wynik').innerHTML=wynik;
+        }
+        </script>
+        
+    </div>
+    <div id="blok">    
+    </div>
+ </div>
+ <div id="right">  
+    <img src="https://th.bing.com/th/id/R.0042d9a5fa9c7837739bd3bb7be9444a?rik=Hrs%2fNDjQqZ7hnw&riu=http%3a%2f%2fwww.tapeciarnia.pl%2ftapeciarnia_pl.php%3falbum%3d23095_1462145292_3766.jpg&ehk=Wze0kTFX1924AM74r6zgtaHRECgJrTSSkMzqx9M6rNM%3d&risl=&pid=ImgRaw&r=0" width="500px" height="450px"/>
+ </div>
+ <div id="foot">
+ <p>"Jakie to lekkie w kropli deszczu"</p>
+ <h4>Wisława Szymborska</h4>
+ </div>
+
+
+
+</div>
+</form>
+</body>

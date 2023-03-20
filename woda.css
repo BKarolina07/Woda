@@ -1,0 +1,93 @@
+#mother {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background-color:azure;
+}
+
+#baner {
+    background-color: #f9f9f9;
+    font-size: 40px;
+    text-align: center;
+    height: 10%;
+    padding-top: 2%;
+    letter-spacing: 5px;
+    border:#3366cc groove 4px;
+}
+
+#left {
+    float: left;
+    background-color: #003399;
+    width: 50%;
+    height: 74%;
+    padding-top: 2%;
+    text-align: center;
+}
+
+#right {
+    float: left;
+    background-color: #3399CC;
+    width: 50%;
+    height: 74%;
+    padding-top: 2%;
+    text-align: center;
+}
+
+#foot {
+    background-color: #cfd8dc;
+    height: 9%;
+    text-align: right;
+}
+
+#formularz {
+    padding: auto;
+    margin: auto;
+    height: 310px;
+    width: 280px;
+    background-color: #99CCFF;
+    border-radius: 10px;
+}
+
+#blok {
+    padding:auto;
+    margin: auto;
+    margin-top: 5px;
+    width: 280px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+ h2 {
+    text-align: center;
+    color:#990000;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+.inline{
+    display: inline-flex;
+}
+
+label {
+    display: block;
+}
+
+input,
+label {
+    margin: 0.4rem 0;
+}
+
+.inline2 {
+    display: inline-flex;
+}
+
+button {
+    background-color: #3399ff;
+    height: 45px;
+    font-weight: bold;
+    border-radius: 10px;
+}
